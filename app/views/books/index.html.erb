@@ -19,7 +19,7 @@
         <%= link_to("Edit", edit_book_path(book.id), {class: "show_id-1"}) %>
       </td>
       <td>
-        <p class="show_id-1">Destroy</p>
+        <%= link_to "destroy", destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
       </td>
     </tr>
   <% end %>
