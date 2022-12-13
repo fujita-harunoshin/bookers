@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/' => 'homes#top'
   # のちにget '/' => 'homes#top'以外をresources :booksに変更
   get 'books' => 'books#index'
+  post 'books' => 'books#create'
   get 'books/id' => 'books#show', as: 'list'
   get 'books/id/edit' => 'books#edit', as: 'edit_list'
 end
