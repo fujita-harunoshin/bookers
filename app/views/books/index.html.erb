@@ -13,10 +13,10 @@
       <td><%= book.title %></td>
       <td><%= book.body %></td>
       <td>
-        <%= link_to("Show", list_path, {class: "show_id-1"}) %>
+        <%= link_to("Show", book_path(book.id), {class: "show_id-1"}) %>
       </td>
       <td>
-        <%= link_to("Edit", edit_list_path, {class: "show_id-1"}) %>
+        <%= link_to("Edit", edit_book_path(book.id), {class: "show_id-1"}) %>
       </td>
       <td>
         <p class="show_id-1">Destroy</p>
