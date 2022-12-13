@@ -8,7 +8,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     if @book.save
       flash[:message_show] = "Book was successfully created."
-      redirect_to book_path(book.id)
+      redirect_to book_path(@book.id)
     else
       @books = Book.all
       render :index

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get '/' => 'homes#top'
+  root to: 'homes#top'
   # のちにget '/' => 'homes#top'以外をresources :booksに変更
   resources :books
   # get 'books' => 'books#index'
