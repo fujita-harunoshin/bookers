@@ -1,0 +1,8 @@
+<%= flash[:message_show] %>
+
+<p>Title: <span><%= @book.title %></span></p>
+<p>Body: <span><%= @book.body %></span></p>
+
+<%= link_to("Edit", edit_book_path(@book.id)) %>
+<span> | </span>
+<%= link_to("Back", '/books') %>
